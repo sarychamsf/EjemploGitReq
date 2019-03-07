@@ -9,6 +9,7 @@ import { VerificacionComponent } from './verificacion/verificacion.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroLotesComponent } from './registro-lotes/registro-lotes.component';
 import { NuevoRegistroComponent } from './embotellador/nuevo-registro/nuevo-registro.component';
+import { NuevoRegistroSecosComponent } from './embotellador/nuevo-registro-secos/nuevo-registro-secos.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NuevoRegistroComponent } from './embotellador/nuevo-registro/nuevo-regi
     HeaderComponent,
     VerificacionComponent,
     RegistroLotesComponent,
-    NuevoRegistroComponent
+    NuevoRegistroComponent,
+    NuevoRegistroSecosComponent
   ],
   imports: [
     BrowserModule,
