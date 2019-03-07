@@ -8,6 +8,11 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { VerificacionComponent } from './verificacion/verificacion.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroLotesComponent } from './registro-lotes/registro-lotes.component';
+import { MayoristasMinoristasComponent } from './mayoristas-minoristas/mayoristas-minoristas.component';
+import { ProduccionVinoComponent} from './produccion-vino/produccion-vino.component';
+import { RecepcionUvasComponent} from './recepcion-uvas/recepcion-uvas.component';
+import {RecepcionUvasBodegaComponent} from './recepcion-uvas-bodega/recepcion-uvas-bodega.component';
+
 
 
 @NgModule({
@@ -15,7 +20,12 @@ import { RegistroLotesComponent } from './registro-lotes/registro-lotes.componen
     AppComponent,
     HeaderComponent,
     VerificacionComponent,
-    RegistroLotesComponent
+    RegistroLotesComponent, 
+    MayoristasMinoristasComponent,
+   ProduccionVinoComponent,
+  RecepcionUvasComponent,
+  RecepcionUvasBodegaComponent
+
   ],
   imports: [
     BrowserModule,
