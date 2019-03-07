@@ -13,6 +13,8 @@ import { ProduccionVinoComponent} from './produccion-vino/produccion-vino.compon
 import { RecepcionUvasComponent} from './recepcion-uvas/recepcion-uvas.component';
 import {RecepcionUvasBodegaComponent} from './recepcion-uvas-bodega/recepcion-uvas-bodega.component';
 
+import { NuevoRegistroComponent } from './embotellador/nuevo-registro/nuevo-registro.component';
+import { NuevoRegistroSecosComponent } from './embotellador/nuevo-registro-secos/nuevo-registro-secos.component';
 
 
 @NgModule({
@@ -24,8 +26,11 @@ import {RecepcionUvasBodegaComponent} from './recepcion-uvas-bodega/recepcion-uv
     MayoristasMinoristasComponent,
    ProduccionVinoComponent,
   RecepcionUvasComponent,
-  RecepcionUvasBodegaComponent
+  RecepcionUvasBodegaComponent,
 
+    RegistroLotesComponent,
+    NuevoRegistroComponent,
+    NuevoRegistroSecosComponent
   ],
   imports: [
     BrowserModule,

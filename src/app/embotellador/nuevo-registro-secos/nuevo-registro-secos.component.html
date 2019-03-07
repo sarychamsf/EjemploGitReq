@@ -1,0 +1,21 @@
+<div class="container">
+  <br>
+  <form (ngSubmit)="onsubmit(submitedForm)" #submitedForm="ngForm">
+    <div class="form-group">
+      <label for="prodName">Nombre del Producto</label>
+      <input class="form-control" name="prodName" id="prodName" placeholder="1234" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="fechaEntradaStock">Fecha de Entrada a Stock</label>
+      <div class="input-group">
+        <input class="form-control" placeholder="yyyy-mm-dd" name="fechaEntradaStock" ngModel
+          ngbDatepicker #d="ngbDatepicker" id="fechaEntradaStock">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary calendar fa fa-calendar" (click)="d.toggle()" type="button"></button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-primary btn-block" style="background-color: darkmagenta" type="submit">Submit</button>
+  </form>
+</div>

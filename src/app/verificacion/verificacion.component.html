@@ -12,7 +12,7 @@
     <div class="form-group">
       <label for="fechaSalidaProductor">Fecha de salida de Agricultor</label>
       <div class="input-group">
-        <input class="form-control" placeholder="yyyy-mm-dd" name="fechaSalidaAgricultor" [(ngModel)]="date"
+        <input class="form-control" placeholder="yyyy-mm-dd" name="fechaSalidaAgricultor" ngModel
           ngbDatepicker #d="ngbDatepicker" id="fechaSalidaProductor">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary calendar fa fa-calendar" (click)="d.toggle()" type="button"></button>
@@ -22,7 +22,7 @@
     <div class="form-group">
       <label for="fechaSalidaProductor">Fecha de Entrada a Procuccion</label>
       <div class="input-group">
-        <input class="form-control" placeholder="yyyy-mm-dd" name="fechaEntradaProductor" [(ngModel)]="date"
+        <input class="form-control" placeholder="yyyy-mm-dd" name="fechaEntradaProductor" ngModel
           ngbDatepicker #d="ngbDatepicker" id="fechaSalidaProductor">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary calendar fa fa-calendar" (click)="d.toggle()" type="button"></button>
@@ -32,13 +32,33 @@
     <div class="form-group">
       <label for="fechaSalidaProductor">Fecha de Salida de Procuccion</label>
       <div class="input-group">
-        <input class="form-control" placeholder="yyyy-mm-dd" name="fechaSalidaProductor" [(ngModel)]="date"
+        <input class="form-control" placeholder="yyyy-mm-dd" name="fechaSalidaProductor" ngModel
           ngbDatepicker #d="ngbDatepicker" id="fechaSalidaProductor">
         <div class="input-group-append">
           <button class="btn btn-outline-secondary calendar fa fa-calendar" (click)="d.toggle()" type="button"></button>
         </div>
       </div>
     </div>
-    <button type="submit">Submit</button>
+    <div class="form-group">
+      <label for="fechaEntradaDistribucion">Fecha de Entrada de Distribucion (sin fraccionar)</label>
+      <div class="input-group">
+        <input class="form-control" placeholder="yyyy-mm-dd" name="fechaEntradaDistribucion" ngModel
+          ngbDatepicker #d="ngbDatepicker" id="fechaEntradaDistribucion">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary calendar fa fa-calendar" (click)="d.toggle()" type="button"></button>
+        </div>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Status</label>
+      </div>
+      <select class="custom-select" id="inputGroupSelect01" ngModel name="status">
+        <option selected>Aceptado</option>
+        <option value="1">Denegado</option>
+      </select>
+    </div>
+    <br>
+    <button class="btn btn-primary btn-block" style="background-color: darkmagenta" type="submit">Submit</button>
   </form>
 </div>

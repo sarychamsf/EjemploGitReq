@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
-  selector: 'app-verificacion',
-  templateUrl: './verificacion.component.html',
-  styleUrls: ['./verificacion.component.scss']
+  selector: 'app-nuevo-registro',
+  templateUrl: './nuevo-registro.component.html',
+  styleUrls: ['./nuevo-registro.component.scss']
 })
-export class VerificacionComponent implements OnInit {
+export class NuevoRegistroComponent implements OnInit {
+
   constructor() { }
 
   ngOnInit() {
