@@ -7,7 +7,6 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./verificacion.component.scss']
 })
 export class VerificacionComponent implements OnInit {
-  date;
   constructor() { }
 
   ngOnInit() {
