@@ -10,6 +10,9 @@ import {BodtransComponent } from './bodtrans/bodtrans.component';
 import {DistvinoComponent } from './distvino/distvino.component';
 import {DistprovComponent } from './distprov/distprov.component';
 import {EmboteComponent } from './embote/embote.component';
+import {AlmacenamientoVinoComponent} from './almacenamiento-vino/almacenamiento-vino.component';
+import {RegistroEntregaComponent} from './registro-entrega/registro-entrega.component';
+import {EmbotelladorResultadosComponent } from './embotellador-resultados/embotellador-resultados.component';
 
 const routes: Routes = [
   {path: 'verificacion', component: VerificacionComponent},
@@ -20,7 +23,10 @@ const routes: Routes = [
   {path:'recepcion-uvas-bodega', component: RecepcionUvasBodegaComponent},
   {path:'distprov', component: DistprovComponent},
   {path:'distvino', component: DistvinoComponent},
-  {path:'embote', component: EmboteComponent}
+  {path:'embote', component: EmboteComponent},
+  {path:'almacenamiento-vino', component: AlmacenamientoVinoComponent},
+  {path:'registro-entrega', component: RegistroEntregaComponent},
+  {path:'embotellador-resultados', component: EmbotelladorResultadosComponent}
 
 ];
 

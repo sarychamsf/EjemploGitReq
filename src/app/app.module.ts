@@ -16,10 +16,11 @@ import {BodtransComponent } from './bodtrans/bodtrans.component';
 import {DistvinoComponent } from './distvino/distvino.component';
 import {DistprovComponent } from './distprov/distprov.component';
 import {EmboteComponent } from './embote/embote.component';
-
-
 import { NuevoRegistroComponent } from './embotellador/nuevo-registro/nuevo-registro.component';
 import { NuevoRegistroSecosComponent } from './embotellador/nuevo-registro-secos/nuevo-registro-secos.component';
+import { AlmacenamientoVinoComponent } from './almacenamiento-vino/almacenamiento-vino.component';
+import { RegistroEntregaComponent } from './registro-entrega/registro-entrega.component';
+import { EmbotelladorResultadosComponent } from './embotellador-resultados/embotellador-resultados.component';
 
 
 @NgModule({
@@ -39,7 +40,10 @@ import { NuevoRegistroSecosComponent } from './embotellador/nuevo-registro-secos
     DistprovComponent,
     DistvinoComponent,
     EmboteComponent,
-    BodtransComponent
+    BodtransComponent,
+    AlmacenamientoVinoComponent,
+    RegistroEntregaComponent,
+    EmbotelladorResultadosComponent
   ],
   imports: [
     BrowserModule,
