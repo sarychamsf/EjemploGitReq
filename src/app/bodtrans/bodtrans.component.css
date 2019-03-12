@@ -1,0 +1,12 @@
+.contenedor{
+    font-weight: 400;
+    margin: 0 00px 25px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    .button{
+        padding: 10px;
+        border-radius: 3px;
+    }

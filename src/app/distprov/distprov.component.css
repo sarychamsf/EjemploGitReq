@@ -1,0 +1,18 @@
+
+.contenedor{
+    padding: 0 1rem;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .caja {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  background:rgba(207,101,175,0.6);
+  margin: 0 500px 25px;
+  overflow: hidden;
+  padding: 20px;
+   text-align: center;
+  
+  }

@@ -12,6 +12,11 @@ import { MayoristasMinoristasComponent } from './mayoristas-minoristas/mayorista
 import { ProduccionVinoComponent} from './produccion-vino/produccion-vino.component';
 import { RecepcionUvasComponent} from './recepcion-uvas/recepcion-uvas.component';
 import {RecepcionUvasBodegaComponent} from './recepcion-uvas-bodega/recepcion-uvas-bodega.component';
+import {BodtransComponent } from './bodtrans/bodtrans.component';
+import {DistvinoComponent } from './distvino/distvino.component';
+import {DistprovComponent } from './distprov/distprov.component';
+import {EmboteComponent } from './embote/embote.component';
+
 
 import { NuevoRegistroComponent } from './embotellador/nuevo-registro/nuevo-registro.component';
 import { NuevoRegistroSecosComponent } from './embotellador/nuevo-registro-secos/nuevo-registro-secos.component';
@@ -30,7 +35,11 @@ import { NuevoRegistroSecosComponent } from './embotellador/nuevo-registro-secos
 
     RegistroLotesComponent,
     NuevoRegistroComponent,
-    NuevoRegistroSecosComponent
+    NuevoRegistroSecosComponent,
+    DistprovComponent,
+    DistvinoComponent,
+    EmboteComponent,
+    BodtransComponent
   ],
   imports: [
     BrowserModule,
