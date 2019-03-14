@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { environment} from '../environments/environment';
 import { VerificacionComponent } from './verificacion/verificacion.component';
 import { FormsModule } from '@angular/forms';
 import { RegistroLotesComponent } from './registro-lotes/registro-lotes.component';
@@ -49,7 +51,8 @@ import { EmbotelladorResultadosComponent } from './embotellador-resultados/embot
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase) 
   ],
   providers: [],
   bootstrap: [AppComponent]
