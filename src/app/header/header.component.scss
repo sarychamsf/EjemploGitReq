@@ -1,12 +1,59 @@
 img {
     height: 2em;
 }
-.navbar{
-    background-color: darkmagenta;
-}
-nav > * {
-    color: white;
-}
+
 a {
     cursor: pointer;
+}
+
+.navbar{
+    background-color: darkmagenta;
+    
+}
+
+
+nav ul  {
+	list-style:none;
+}
+
+nav > ul > li  {
+	float:left;  
+}
+
+ nav ul li a {
+    display: block;
+	padding:10px 20px;
+	color:#fff;
+    text-decoration:none; 
+
+}
+
+nav ul li a:hover {
+	background: #880e4f;
+}
+
+/*Submenu*/
+
+nav li ul li {
+    position:relative;
+    background: darkmagenta;
+}
+
+nav ul li ul {
+	display:none;
+    position:absolute;
+    list-style:none;
+
+
+}
+
+nav ul li:hover > ul{
+	display:block;
+    list-style:none;
+}
+
+nav ul li ul li {
+	right:40px;
+    top:0px;
+    width: 106.1%;
 }

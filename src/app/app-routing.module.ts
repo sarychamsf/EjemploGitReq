@@ -21,6 +21,7 @@ const routes: Routes = [
   {path:'produccion-vino', component: ProduccionVinoComponent},
   {path:'recepcion-uvas', component: RecepcionUvasComponent},
   {path:'recepcion-uvas-bodega', component: RecepcionUvasBodegaComponent},
+  {path:'bodtrans', component: BodtransComponent},
   {path:'distprov', component: DistprovComponent},
   {path:'distvino', component: DistvinoComponent},
   {path:'embote', component: EmboteComponent},
