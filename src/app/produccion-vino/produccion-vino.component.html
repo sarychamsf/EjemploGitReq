@@ -3,9 +3,9 @@
   <h1>Registro de la producción del vino</h1>
  <div class="form-group" >
   Ingredientes utilizados en la mezcla:<br>
-  <textarea rows="4" cols="40" name="IngredientesMezcla">  </textarea><br><br>
+  <textarea rows="4" cols="40" #IngredientesMezcla>  </textarea><br><br>
  Proceso utilizado de producción:<br>
-  <textarea rows="4" cols="40" name="ProcesoProduccion" >  </textarea><br><br>
-  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createUser(name.value)">Guardar</button>
+  <textarea rows="4" cols="40" #ProcesoProduccion>  </textarea><br><br>
+  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createProduccionVino(IngredientesMezcla.value, ProcesoProduccion.value)">Guardar</button>
 </div>
 </form>
