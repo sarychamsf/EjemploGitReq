@@ -1,10 +1,11 @@
-<h1>Registro de la producción del vino</h1>
-<form style="padding:50px;">
- 
+
+<form style="padding:50px; text-align: center">
+  <h1>Registro de la producción del vino</h1>
+ <div class="form-group" >
   Ingredientes utilizados en la mezcla:<br>
   <textarea rows="4" cols="40" name="IngredientesMezcla">  </textarea><br><br>
  Proceso utilizado de producción:<br>
   <textarea rows="4" cols="40" name="ProcesoProduccion" >  </textarea><br><br>
-
-  <input type="submit"><br><br>
+  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createUser(name.value)">Guardar</button>
+</div>
 </form>

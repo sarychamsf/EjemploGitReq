@@ -3,13 +3,12 @@
 <div class="contenedor">
 <form style="padding:50px;">
   Nombre del receptor del pedido:<br>
-  <input type="text" name="IdProveedor"/><br><br>
+  <input type="text" #IdProveedor/><br><br>
   Fecha de recepcion del vino:<br>
-  <input type="date" name="RecepcionVino"><br><br>
+  <input type="date" #RecepcionVino><br><br>
    Fecha de venta al cliente final:<br>
-  <input type="date" name="VentaCliente"><br><br>
+  <input type="date" #VentaCliente><br><br>
   <br>
-  <input type="submit"><br><br>
+  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createMayorista(IdProveedor.value, RecepcionVino.value, VentaCliente.value)">Guardar</button>
 </form>
-
 </div>

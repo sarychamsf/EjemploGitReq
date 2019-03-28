@@ -54,7 +54,7 @@ import { EmbotelladorResultadosComponent } from './embotellador-resultados/embot
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase) 
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
