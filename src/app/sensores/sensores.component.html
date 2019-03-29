@@ -1,0 +1,51 @@
+<body>
+<div class="container">
+<h1>Sensores</h1> 
+<br>
+<br>
+
+  <div class="row">
+      
+      <div class="col-sm-4"  >
+        <div class="distance"> 
+          <img  src="https://image.flaticon.com/icons/svg/484/484140.svg "> 
+        </div>
+        
+        <div class="letraD"  *ngFor="let item of items" > 
+              Distancia: {{item.Distancia}}
+        </div> 
+    
+      </div>
+      
+  
+      <div class="col-sm-4" >
+        <div class="humidity"> 
+          <img src="https://cdn.icon-icons.com/icons2/67/PNG/512/moisture_13524.png"> 
+        </div> 
+
+        <div class="letraH" *ngFor="let item of items"> 
+            Humedad: {{item.Humedad}}
+        </div> 
+        
+      </div>
+  
+      
+      <div class="col-sm-4"   >
+         <div class="temperature"> 
+            <img src="https://ya-webdesign.com/images600_/svg-reference-temperature-16.png"> 
+          </div>
+          
+          <div class="letraT" *ngFor="let item of items"> 
+              Tempertaruta: {{item.Temperatura}}
+          </div> 
+      </div>
+
+      <div class="col-sm-12">
+          <canvas class="grafica" id="realtime"></canvas>
+      </div>
+
+
+
+  </div>
+</div>
+</body>

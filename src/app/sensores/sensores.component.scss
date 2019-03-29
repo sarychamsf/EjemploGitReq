@@ -1,0 +1,50 @@
+ul {
+  list-style-type: none;
+}
+
+body{
+
+    background-color:#e0e0e0;
+}
+h1{
+
+    text-align: center;
+}
+
+.contenedor{
+    margin: 0 auto;
+}
+.grafica{
+
+    margin-top: 50px;
+ 
+}
+
+
+img {
+    height: 100px;
+    margin: 0 auto;
+
+
+}
+
+.distance,.humidity,.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding: 30px 30px;
+    border-radius:15px;
+    
+}
+
+.letraD,.letraH,.letraT{
+    background-color: aliceblue;
+    text-align: center;
+    border:1px solid #1668C4;
+    border-radius:15px;
+
+
+}
+    

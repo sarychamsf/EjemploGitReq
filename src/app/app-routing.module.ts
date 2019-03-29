@@ -13,6 +13,7 @@ import {EmboteComponent } from './embote/embote.component';
 import {AlmacenamientoVinoComponent} from './almacenamiento-vino/almacenamiento-vino.component';
 import {RegistroEntregaComponent} from './registro-entrega/registro-entrega.component';
 import {EmbotelladorResultadosComponent } from './embotellador-resultados/embotellador-resultados.component';
+import {SensoresComponent} from './sensores/sensores.component';
 
 const routes: Routes = [
   {path: 'verificacion', component: VerificacionComponent},
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path:'embote', component: EmboteComponent},
   {path:'almacenamiento-vino', component: AlmacenamientoVinoComponent},
   {path:'registro-entrega', component: RegistroEntregaComponent},
-  {path:'embotellador-resultados', component: EmbotelladorResultadosComponent}
+  {path:'embotellador-resultados', component: EmbotelladorResultadosComponent},
+  {path:'sensores', component: SensoresComponent}
 
 ];
 

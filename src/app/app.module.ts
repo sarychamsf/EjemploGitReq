@@ -23,6 +23,8 @@ import { NuevoRegistroSecosComponent } from './embotellador/nuevo-registro-secos
 import { AlmacenamientoVinoComponent } from './almacenamiento-vino/almacenamiento-vino.component';
 import { RegistroEntregaComponent } from './registro-entrega/registro-entrega.component';
 import { EmbotelladorResultadosComponent } from './embotellador-resultados/embotellador-resultados.component';
+import { SensoresComponent } from './sensores/sensores.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -45,16 +47,19 @@ import { EmbotelladorResultadosComponent } from './embotellador-resultados/embot
     BodtransComponent,
     AlmacenamientoVinoComponent,
     RegistroEntregaComponent,
-    EmbotelladorResultadosComponent
+    EmbotelladorResultadosComponent,
+    SensoresComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    AngularFireModule.initializeApp(environment.firebase) 
+    AngularFireModule.initializeApp(environment.firebase),
+    ChartsModule
+ 
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
