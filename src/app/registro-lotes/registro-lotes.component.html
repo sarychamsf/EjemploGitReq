@@ -3,22 +3,22 @@
 <div class="contenedor">
 <form style="padding:50px;">
   Lote:<br>
-  <input type="text" name="lote"><br><br>
+  <input type="text" #lote><br><br>
   Producción Anual:<br>
-  <input type="text" name="produccion-anual"><br><br>
+  <input type="text" #produccionAnual><br><br>
   Condiciones climáticas:<br>
   <textarea rows="4" cols="40"> </textarea><br><br>
   Origen:<br>
-  <input type="text" name="origen"><br><br>
+  <input type="text" #origen><br><br>
   Destino:<br>
-  <input type="text" name="destino"><br><br>
+  <input type="text" #destino><br><br>
   Contenido químico del agua:<br>
-  <input type="text" name="agua"><br><br>
+  <input type="text" #agua><br><br>
   Contenido químico de los fertilizantes:<br>
-  <input type="text" name="fertilizantes"><br><br>
+  <input type="text" #fertilizantes><br><br>
   Fecha de recolección de la uva:<br>
-  <input type="date" name="recoleccion"><br><br>
+  <input type="date" #recoleccion><br><br>
   <br>
-  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createUser(name.value)">Guardar</button>
+  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createRegistroLotes(lote.value, produccionAnual.value, origen.value, destino.value, agua.value, fertilizantes.value, recoleccion.value)">Guardar</button>
 </form>
 </div>

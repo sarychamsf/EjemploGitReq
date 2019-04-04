@@ -1,4 +1,4 @@
-/*export const environment = {
+export const environment = {
   production: false,
   firebase: {
     apiKey: 'AIzaSyAWUDX2eUpEQ4ZT6IezFInqM9Gi9tXDSqY',
@@ -9,8 +9,8 @@
     messagingSenderId: '490748893236'
   }
 };
-*/
 
+/*
 export const environment = {
   production: false,
   firebase: {
@@ -22,3 +22,5 @@ export const environment = {
     messagingSenderId: "1036952582468"
   }
 };
+
+*/
