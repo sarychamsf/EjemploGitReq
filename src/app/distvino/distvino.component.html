@@ -3,22 +3,22 @@
 <div class="contenedor">
 <form style="padding:10px;">
   CSS:<br>
-  <input type="text" name="lote"><br><br>
+  <input type="text" name="lote" #CSS><br><br>
   Identificación:<br>
-  <input type="text" name="produccion-anual"><br><br>
+  <input type="text" name="produccion-anual" #Identificacion><br><br>
   Numero de lote:<br>
-   <input type="text" name="produccion-anual"><br><br>
+   <input type="text" name="produccion-anual" #Numerolote><br><br>
   Cantidad de vino:<br>
-  <input type="text" name="origen"><br><br>
+  <input type="text" name="origen" #CantidadVino><br><br>
   Comentario:<br>
-  <textarea rows="4" cols="40"> </textarea><br><br>
+  <textarea rows="4" cols="40" #Comentario> </textarea><br><br>
   Almacenamiento:<br>
-  <input type="text" name="agua"><br><br>
+  <input type="text" name="agua" #Almacenamiento><br><br>
   Despacho:<br>
-  <input type="text" name="fertilizantes"><br><br>
+  <input type="text" name="fertilizantes" #Despacho><br><br>
   Mezcla:<br>
-  <input type="text" name="recoleccion"><br><br>
+  <input type="text" name="recoleccion" #Mezcla><br><br>
   <br>
-  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createUser(name.value)">Guardar</button>
+  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createVino(CSS.value, Identificacion.value, Numerolote.value, CantidadVino.value, Comentario.value, Almacenamiento.value, Despacho.value, Mezcla.value)">Guardar</button>
 </form>
 </div>

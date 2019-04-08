@@ -14,6 +14,7 @@ export interface Mayorista {
   templateUrl: './mayoristas-minoristas.component.html',
   styleUrls: ['./mayoristas-minoristas.component.css']
 })
+
 export class MayoristasMinoristasComponent  {
   private db: AngularFirestore;
   userCollectionRef: AngularFirestoreCollection<Mayorista>;
@@ -38,12 +39,12 @@ export class MayoristasMinoristasComponent  {
 }
 
 createMayorista(IdProveedor: string, RecepcionVino:Date, VentaCliente:Date){
-return this.db.collection('mayoristas-minoristas').add({
-IdProveedor: IdProveedor,
-RecepcionVino: RecepcionVino,
-VentaCliente:VentaCliente
-});
-}
+    return this.db.collection('mayoristas-minoristas').add({
+    IdProveedor: IdProveedor,
+    RecepcionVino: RecepcionVino,
+    VentaCliente:VentaCliente
+  });
+  }
 }
   
 

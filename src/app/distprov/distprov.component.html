@@ -2,8 +2,8 @@
 <div class="contenedor">
   <form style="padding:50px;">
     Identificador:<br>
-    <input type="text" name="produccion-anual"><br><br>
-    <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createUser(name.value)">Guardar</button>
+    <input type="text" name="produccion-anual" #Identificador><br><br>
+    <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createTProveedor(Identificador.value)">Guardar</button>
     <input style="margin-left: 60px" type="submit" value="Guardar" /> 
   </form>
   </div>
