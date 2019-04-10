@@ -1,0 +1,16 @@
+<div class="container">
+  <br>
+    <div class="form-group">
+      <label>Nombre del Producto</label><br>
+      <input type="text" #prodName><br>
+    </div>
+    <div class="form-group">
+      <label >Fecha de Entrada a Stock</label><br>
+      <div class="input-group">
+        <input type="date" #fechaEntradaStock>
+        
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createNuevoRegistroSecos(prodName.value, fechaEntradaStock.value)">Guardar</button>
+</div>

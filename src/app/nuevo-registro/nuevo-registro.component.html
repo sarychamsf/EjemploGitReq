@@ -1,0 +1,12 @@
+<div class="container">
+  <br>
+    
+      <label >Id Lote</label><br>
+      <input type="text"  #idProductor ><br>
+    
+      <label>Fecha de Entrada a Embotellamiento</label><br>
+      <input type="date" #EntradaEmbotellamiento><br><br>
+      
+    <br>
+    <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createNuevoRegistro(idProductor.value, EntradaEmbotellamiento.value)">Guardar</button>
+    </div>

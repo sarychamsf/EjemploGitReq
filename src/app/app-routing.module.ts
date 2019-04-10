@@ -14,6 +14,8 @@ import {AlmacenamientoVinoComponent} from './almacenamiento-vino/almacenamiento-
 import {RegistroEntregaComponent} from './registro-entrega/registro-entrega.component';
 import {EmbotelladorResultadosComponent } from './embotellador-resultados/embotellador-resultados.component';
 import {SensoresComponent} from './sensores/sensores.component';
+import { NuevoRegistroComponent } from './nuevo-registro/nuevo-registro.component';
+import { NuevoRegistroSecosComponent } from './nuevo-registro-secos/nuevo-registro-secos.component';
 
 const routes: Routes = [
   {path: 'verificacion', component: VerificacionComponent},
@@ -29,8 +31,10 @@ const routes: Routes = [
   {path:'almacenamiento-vino', component: AlmacenamientoVinoComponent},
   {path:'registro-entrega', component: RegistroEntregaComponent},
   {path:'embotellador-resultados', component: EmbotelladorResultadosComponent},
-  {path:'sensores', component: SensoresComponent}
-
+  {path:'sensores', component: SensoresComponent},
+  {path:'verificacion', component: VerificacionComponent},
+  {path:'nuevo-registro', component: NuevoRegistroComponent},
+  {path:'nuevo-registro-secos', component: NuevoRegistroSecosComponent}
 ];
 
 @NgModule({
