@@ -1,11 +1,19 @@
 <form style="padding:50px;">
   Lote:<br>
-  <input type="text" name="lote"><br><br>
+  <input type="text" #lote><br><br>
   Proceso:<br><br>
-  <input type="radio" name="Recibido" value="Recibido"> Recibido<br>
-  <input type="radio" name="Despachado" value="Despachado"> Despachado<br><br>
+
+  <select #proceso>
+    <option type="radio" value="Recibido">Recibido</option>
+    <option type="radio" value="Despachado">Despachado</option>
+  </select>
+
+  <br><br>
   Fecha del proceso:<br>
-  <input type="date" name="recoleccion"><br><br>
+  <input type="date" #recoleccion><br><br>
   <br>
-  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createUser(name.value)">Guardar</button>
-</form>
+
+  <button class="btn btn-primary" style="background-color: darkmagenta"
+    (click)="createAlmacenamientoVino(lote.value, proceso.value, recoleccion.value)">Guardar</button>
+
+  </form>
