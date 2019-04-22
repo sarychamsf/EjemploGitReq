@@ -3,7 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/fire
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
-export interface RegistroLotes {
+export interface RegistroEntrega {
   idRegistroEntrega: string;
   entrega: DataCue;
   distribuidor: string;
@@ -19,18 +19,18 @@ export interface RegistroLotes {
 export class RegistroEntregaComponent {
 
   private db: AngularFirestore;
-  userCollectionRef: AngularFirestoreCollection<RegistroLotes>;
-  items: RegistroLotes[];
+  userCollectionRef: AngularFirestoreCollection<RegistroEntrega>;
+  items: RegistroEntrega[];
 
   constructor(db: AngularFirestore) {
     this.db = db;
-    this.userCollectionRef = db.collection<RegistroLotes>('registro-entrega');
+    this.userCollectionRef = db.collection<RegistroEntrega>('registro-entrega');
 
     this.userCollectionRef.snapshotChanges().subscribe(data => {
       if (data) {
         this.items = data.map(item => {
-          const data = item.payload.doc.data() as RegistroLotes;
-          data.lote = item.payload.doc.id;
+          const data = item.payload.doc.data() as RegistroEntrega;
+          data.idRegistroEntrega = item.payload.doc.id;
           return data;
         });
       }
