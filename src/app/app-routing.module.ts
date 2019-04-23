@@ -18,7 +18,7 @@ import { NuevoRegistroComponent } from './nuevo-registro/nuevo-registro.componen
 import { NuevoRegistroSecosComponent } from './nuevo-registro-secos/nuevo-registro-secos.component';
 
 const routes: Routes = [
-  {path: 'verificacion', component: VerificacionComponent},
+  {path:'verificacion', component: VerificacionComponent},
   {path:'registro-lotes', component: RegistroLotesComponent},
   {path:'mayoristas-minoristas', component: MayoristasMinoristasComponent},
   {path:'produccion-vino', component: ProduccionVinoComponent},

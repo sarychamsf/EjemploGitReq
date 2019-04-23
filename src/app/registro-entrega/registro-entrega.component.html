@@ -1,5 +1,6 @@
-<h1>Registro entrega</h1>
+<h1 style="text-align:center">Registro entrega</h1>
 
+<div class="contenedor">
 <form style="padding:50px;">
   Fecha de entrega:<br>
   <input type="date" #entrega><br><br>
@@ -10,3 +11,4 @@
   <br>
   <button class="btn btn-primary" style="background-color: darkmagenta" (click)="createRegistroEntrega(entrega.value, distribuidor.value, lote.value)">Guardar</button>
 </form>
+</div>
