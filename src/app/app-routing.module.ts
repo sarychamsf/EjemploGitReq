@@ -16,6 +16,9 @@ import {EmbotelladorResultadosComponent } from './embotellador-resultados/embote
 import {SensoresComponent} from './sensores/sensores.component';
 import { NuevoRegistroComponent } from './nuevo-registro/nuevo-registro.component';
 import { NuevoRegistroSecosComponent } from './nuevo-registro-secos/nuevo-registro-secos.component';
+import {VistaInformacionClienteComponent} from './vista-informacion-cliente/vista-informacion-cliente.component';
+import {NuevoUsuarioComponent} from './nuevo-usuario/nuevo-usuario.component';
+
 
 const routes: Routes = [
   {path:'verificacion', component: VerificacionComponent},
@@ -34,7 +37,9 @@ const routes: Routes = [
   {path:'sensores', component: SensoresComponent},
   {path:'verificacion', component: VerificacionComponent},
   {path:'nuevo-registro', component: NuevoRegistroComponent},
-  {path:'nuevo-registro-secos', component: NuevoRegistroSecosComponent}
+  {path:'nuevo-registro-secos', component: NuevoRegistroSecosComponent},
+  {path:'vista-informacion-cliente', component: VistaInformacionClienteComponent},
+  {path:'NuevoUsuario', component: NuevoUsuarioComponent}
 ];
 
 @NgModule({

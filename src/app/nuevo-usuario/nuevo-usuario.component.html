@@ -1,0 +1,28 @@
+<h1 style="text-align: center">Registro de un nuevo usuario</h1>
+
+<div class="contenedor">
+<form style="padding:50px;">
+  Nombre:<br>
+  <input type="text" #NombreUsuario><br><br>
+  Correo:<br>
+  <input type="email" #CorreoUsuario><br><br>
+   Contraseña:<br>
+  <input type="password" #ContrasenaUsuario><br><br>
+  Repetir contraseña:<br>
+  <input type="password" #RepetirContrasenaUsuario><br><br>
+  <div class="col-auto my-1">
+    <label class="mr-sm-2" for="inlineFormCustomSelect">Tipo de Usuario</label>
+    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" #TipoUsuario>
+      <option selected>Choose...</option>
+      <option value="Agricultor">Agricultor</option>
+      <option value="Distribuidor">Distribuidor</option>
+      <option value="Productor">Productor</option>
+      <option value="MayoristaMinorista">MayoristaMinorista</option>
+      <option value="Cliente">Cliente</option>
+    </select>
+  </div>
+  
+</form>
+  <br>
+  <button class="btn btn-primary" style="background-color: darkmagenta" (click)="CrearUsuario(NombreUsuario.value, CorreoUsuario.value, ContrasenaUsuario.value, RepetirContrasenaUsuario.value, TipoUsuario.value)">Guardar</button>
+</div>

@@ -25,6 +25,9 @@ import { RegistroEntregaComponent } from './registro-entrega/registro-entrega.co
 import { EmbotelladorResultadosComponent } from './embotellador-resultados/embotellador-resultados.component';
 import { SensoresComponent } from './sensores/sensores.component';
 import { ChartsModule } from 'ng2-charts';
+import {VistaInformacionClienteComponent} from './vista-informacion-cliente/vista-informacion-cliente.component';
+import {NuevoUsuarioComponent} from './nuevo-usuario/nuevo-usuario.component';
+
 
 
 @NgModule({
@@ -48,6 +51,8 @@ import { ChartsModule } from 'ng2-charts';
     RegistroEntregaComponent,
     EmbotelladorResultadosComponent,
     SensoresComponent,
+    VistaInformacionClienteComponent,
+    NuevoUsuarioComponent,
   ],
   imports: [
     BrowserModule,
